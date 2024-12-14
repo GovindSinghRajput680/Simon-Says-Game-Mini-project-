@@ -1,0 +1,36 @@
+body{
+    text-align: center;
+}
+
+#outer{
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr); /* Creates 4 rows, each taking equal space (1 fraction) */
+    /* Alternative syntax: grid-template-rows: 60px 60px 60px 60px; */
+    /* This would create 4 rows, each 60px tall. */
+
+    grid-template-columns: repeat(2, 1fr); /* Creates 4 columns, each taking equal space (1 fraction) */
+    /* Alternative syntax: grid-template-columns: 100px 100px 100px 100px; */
+    /* This would create 4 columns, each 100px wide. */
+    grid-gap: 10px;
+}
+.inner{
+    width: 100px;
+    height: 100px;
+    border: solid 2px black;
+    border-radius: 10px;
+}
+#box1{
+    background-color: rgb(179, 12, 129);
+}
+#box2{
+    background-color: rgb(11, 93, 118);
+}
+#box3{
+    background-color: orangered;
+}
+#box4{
+    background-color: rgb(47, 13, 161);
+}
